@@ -64,7 +64,6 @@ const form = document.getElementById("form");
 
 //Initialization
 const socket = io('wss://raylaidchat.codebloop.my.id/',{
-  path: '/api/socket',
   transports: ['websocket'],
 });
 // const userSocket = io('https://raylaidchat.codebloop.my.id/api/encrypt/user', { auth: { token: 'Test' }});
