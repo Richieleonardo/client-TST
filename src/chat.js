@@ -63,7 +63,7 @@ const messageInput = document.getElementById("message-input");
 const form = document.getElementById("form");
 
 //Initialization
-const socket = io('wss://raylaidchat.codebloop.my.id/',{
+const socket = io('https://chat-tst-production.up.railway.app',{
   transports: ['websocket'],
 });
 // const userSocket = io('https://raylaidchat.codebloop.my.id/api/encrypt/user', { auth: { token: 'Test' }});
@@ -118,11 +118,11 @@ function displayMessage(message){
 
 // for encrypting message
 async function encryptMessage(message){
-  const apiKey = "furina_e2aa10b4a8574bc9bad09d242ce2e7e0";
+  const apiKey = "furina_6de1f6478e5a433c844ff3b9a708bfb5";
   const response = await fetch("https://raylaidchat.codebloop.my.id/api/encrypt", {
     method: "POST",
     headers: {
-      "furina-is-so-beautiful": apiKey,
+      "furina-encryption-service": apiKey,
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
@@ -137,11 +137,11 @@ async function encryptMessage(message){
 // for decrypting message
 
 async function decryptMessage(encryptedMessage){
-  const apiKey = "furina_b6144fb380c64ac5b7876346bf35e6ab";  // Different API key for decryption
+  const apiKey = "furina_6de1f6478e5a433c844ff3b9a708bfb5";  // Different API key for decryption
   const response = await fetch("https://raylaidchat.codebloop.my.id/api/decrypt", {
     method: "POST",
     headers: {
-      "furina-is-so-beautiful": apiKey,
+      "furina-encryption-service": apiKey,
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
