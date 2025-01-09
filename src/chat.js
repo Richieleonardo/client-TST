@@ -63,7 +63,7 @@ const messageInput = document.getElementById("message-input");
 const form = document.getElementById("form");
 
 //Initialization
-const socket = io('https://chat.codebloop.my.id',{
+const socket = io('https://chat-tst-production.up.railway.app',{
   transports: ['websocket'],
 });
 // const userSocket = io('https://raylaidchat.codebloop.my.id/api/encrypt/user', { auth: { token: 'Test' }});
