@@ -118,7 +118,7 @@ function displayMessage(message){
 
 // for encrypting message
 async function encryptMessage(message){
-  const apiKey = "furina_6de1f6478e5a433c844ff3b9a708bfb5";
+  const apiKey = "furina_d342f26b8ed24422ac1980d0b3637deb";
   const response = await fetch("https://raylaidchat.codebloop.my.id/api/encrypt", {
     method: "POST",
     headers: {
@@ -137,7 +137,7 @@ async function encryptMessage(message){
 // for decrypting message
 
 async function decryptMessage(encryptedMessage){
-  const apiKey = "furina_6de1f6478e5a433c844ff3b9a708bfb5";  // Different API key for decryption
+  const apiKey = "furina_d342f26b8ed24422ac1980d0b3637deb";  // Different API key for decryption
   const response = await fetch("https://raylaidchat.codebloop.my.id/api/decrypt", {
     method: "POST",
     headers: {
