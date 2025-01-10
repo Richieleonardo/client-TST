@@ -1,7 +1,9 @@
 
 # Client-TST
 
-Repository ini merupakan tempat source code untuk **Client-TST**, yaitu Front-End pengguna untuk service chat End-to-End Encryption berbasis **Session Based Room**
+## Tugas Besar II3160 Teknologi Sistem Terintegrasi
+
+Repository ini merupakan tempat source code untuk **Client-TST**, yaitu Front-End pengguna untuk service chat End-to-End Encryption berbasis **Session Based Room** untuk tugas besar mata kuliah II3160 - Teknologi Sistem Terintegrasi
 
 **Richie Leonardo** \
 **18222071**
