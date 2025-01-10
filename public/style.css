@@ -143,10 +143,16 @@ button:active {
 
 /* General responsive design */
 @media (max-width: 768px) {
+  #main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   #sidebar {
     width: 100%;
     box-shadow: none;
     border-right: none;
+    order: -1;
   }
 
   #popup {
